@@ -7,7 +7,7 @@ export async function POST(req: Request) {
   // Configure OpenRouter provider
   const openrouter = createOpenAI({
     baseURL: "https://openrouter.ai/api/v1", // OpenRouter API endpoint
-    apiKey: "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", // Your OpenRouter API key
+    apiKey: "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", // Your OpenRouter API key
     // defaultHeaders: {
     //   "HTTP-Referer": "YOUR_SITE_URL", // Optional: Replace with your site URL
     //   "X-Title": "YOUR_APP_NAME", // Optional: Replace with your app name
