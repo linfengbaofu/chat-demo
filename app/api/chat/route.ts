@@ -7,7 +7,7 @@ export async function POST(req: Request) {
   // Configure OpenRouter provider
   const openrouter = createOpenAI({
     baseURL: "https://openrouter.ai/api/v1", // OpenRouter API endpoint
-    apiKey: "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", // Your OpenRouter API key
+    apiKey: "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", // Your OpenRouter API key
     // defaultHeaders: {
     //   "HTTP-Referer": "YOUR_SITE_URL", // Optional: Replace with your site URL
     //   "X-Title": "YOUR_APP_NAME", // Optional: Replace with your app name
@@ -15,7 +15,7 @@ export async function POST(req: Request) {
   });
 
   const result = await streamText({
-    model: openrouter("openai/gpt-4o"), // Use OpenRouter's model
+    model: openrouter("openai/gpt-3.5-turbo"), // Use OpenRouter's model
     system:
       "Do not respond with markdown or lists. Keep responses brief. Ask the user to upload images/documents if it helps understand the problem better.",
     messages,
